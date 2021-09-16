@@ -2,8 +2,8 @@
 - 👀 We are interested in Coding and Developments...
 - 🌱 We are currently learning ...
 - 📫 How to reach us ...
-      primecoders.2020@gmail.com\v
-      bkg8900533789@gmail.com\v
+      primecoders.2020@gmail.com    OR
+      bkg8900533789@gmail.com       OR
       soubhik1904@gmail.com
       
       https://www.instagram.com/prime_calculus/
