@@ -1,0 +1,175 @@
+Convert any package to auto installation and auto-update mode
+
+	sudo apt-mark auto [package name]
+
+Convert any package to manual installation and manual-update mode
+
+	sudo apt-mark manual [package name]
+
+To update Installed package index files to get the latest list of available packages in the repositories:
+	sudo apt-get update
+	
+	sudo apt-get update -y
+	
+	sudo apt update
+	
+This command will only upgrade packages that are already installed:
+
+	sudo apt-get upgrade
+
+	sudo apt-get upgrade -y
+
+	sudo apt upgrade
+
+Command to install Chrome browser: (RUN ALL THE COMMANDS ONE AFTER THE OTHER)
+	sudo apt-get update
+	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+	sudo apt install ./google-chrome-stable_current_amd64.deb
+	sudo apt-get update
+
+Command to install Mozilla browser: (RUN ALL THE COMMANDS ONE AFTER THE OTHER)
+	sudo apt-get update
+	sudo apt install firefox
+	sudo apt-get update
+	
+Command to install Tor browser: (RUN ALL THE COMMANDS ONE AFTER THE OTHER)
+	sudo add-apt-repository ppa:micahflee/ppa
+	sudo apt update
+	sudo apt install torbrowser-launcher
+	
+	Locate the tor-browser and open it then it would download and then start!
+	
+Command to fix-broken packages: (RUN ALL THE COMMANDS ONE AFTER THE OTHER)
+	
+	sudo apt --fix-missing update  
+	sudo apt update
+	(This is to force the installation of the broken packages using the -f flag.)
+	sudo apt install -f
+
+To check IP address of all the ports:
+	ip addr
+	
+To display and change the parameters of the network interface:
+	iwconfig
+
+To configure the kernel-resident network interfaces:
+	ifconfig
+	
+To display the amount of available disk space for file systems on which the invoking user has appropriate read access:
+	sudo df
+	
+To display the amount of available disk space for file systems on which the invoking user has appropriate read access( in Kilobyte-block):
+	sudo df -k
+	
+To display the amount of available disk space for file systems on which the invoking user has appropriate read access( in Megabyte-block):
+	sudo df -m
+
+To display the amount of available disk space for file systems on which the invoking user has appropriate read access in human readable format:
+	sudo df -h
+
+To check mac address for any interface:
+
+	macchanger -s [interface]
+		Shows present and permanent mac
+	To check the interfaces:
+		ifconfig
+
+To change MAC Address for any interface:
+	
+	ifconfig [interface] down
+	macchanger -m [new mac address] [interface]
+	ifconfig [interface] up
+	
+	***!!Done!!***
+
+Few File Folder Commands:
+	ls
+		Lists all the elements present in the present directory
+		
+	ls -al
+		Lists all the elements present along with the hidden files in the present directory along with the permissions granted to the files and folders
+		
+	pwd
+		To show the present working directory
+		
+	mkdir [name of the folder]
+		To create a new folder with the name specified
+	
+	touch [name of the file]
+		To create a file with type and name of the file
+		
+	nano [file_name]
+		Opens Nano editor to write something in the file
+		
+	gedit [file_name]
+		Opens Gedit editor to write something in the file (Only for GNOME Desktop Envs)
+		
+	mousepad [file_name]
+		Opens Mousepad editor to write something in the file (Only for XFCE Desktop Envs)
+				
+	cp [options] source destination
+		To copy a file to either to the same folder or to some other directory either with the same name 
+		
+	mv [options] source destination
+		If the Destination is specified then the file with be moved from the pwd to the target location
+		Else if new file name is specified then the file is renamed
+	
+	rm [file_name]
+		Deletes the file
+	
+	rm -r [folder_name]
+		Deletes the folder
+
+	locate [filename]
+		Shows the directory of the file
+		""You need to be specific about the file name, like if it is Hello_T, then you have to type the same""
+	
+	sudo rm -r [folder_name]
+		Deletes the hidden folder or any folder with certain priviledges
+	
+	chmod [OPTION]...[MODE,]MODE ... FILE...
+		Changes file mode bits
+		eg:
+			if the pwd is Documents
+			a new file 'New.txt' is created and a new directory A is created
+			type ls -al to check the permissions assigned to them
+			In all probabilites it will be like this:
+			
+			   drwxr-xr-x  [] [username] [username] [] [Date Time] A
+				Here d means directory
+				rwx are the priviledges given to the user (Read Write Execute)
+				r-x are the priviledges given to the group (Read Execute)
+				r-x are the priviledges given to others (Read Execute)
+
+			   -rw-r--r--  [] [username] [username] [] [Date Time] New.txt
+				Here _ at the beginning means that it is a file
+				rw are the priviledges given to the user (Read Write)
+				r-- are the priviledges given to the group (Read)
+				r-- are the priviledges given to others (Read)
+			
+		Now if the priviledge is to be changed for either User or Group or Others then:
+		
+		~ chmod u=rwx New.txt
+		~ ls -al
+		drwxr-xr-x  [] [username] [username] [] [Date Time] A
+	        -rwxr--r--  [] [username] [username] [] [Date Time] New.txt  [Now for user the mode is Read Write Execute]
+	        
+	        [+] For groups use g instead of u
+	        [+] For groups use g instead of o	        
+	
+Display the help information for the specified command:
+	man [command]	
+
+To work as root user:
+	sudo su -
+
+To clear screen:
+	clear
+
+To autoclean and autoremove unecessary files and folders:
+	sudo apt autoclean
+	sudo apt-get autoclean
+
+	sudo apt autoremove
+	sudo apt-get autoremove
+	
