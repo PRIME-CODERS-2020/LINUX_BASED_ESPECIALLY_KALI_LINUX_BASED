@@ -103,6 +103,9 @@ Few File Folder Commands:
 		
 	gedit [file_name]
 		Opens Gedit editor to write something in the file (Only for GNOME Desktop Envs)
+	
+	cat [file_name]
+		Reads out the entire file on the terminal window
 		
 	mousepad [file_name]
 		Opens Mousepad editor to write something in the file (Only for XFCE Desktop Envs)
