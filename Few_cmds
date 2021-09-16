@@ -127,6 +127,9 @@ Few File Folder Commands:
 		Shows the directory of the file
 		""You need to be specific about the file name, like if it is Hello_T, then you have to type the same""
 	
+	grep [word][filename]
+		To find a word in a given file
+	
 	sudo rm -r [folder_name]
 		Deletes the hidden folder or any folder with certain priviledges
 	
