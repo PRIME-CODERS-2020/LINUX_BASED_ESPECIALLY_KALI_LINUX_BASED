@@ -1,0 +1,50 @@
+1. gcc source.c >>
+
+This will compile the source.c file and give the output file as a.out file which is default name 
+of output file given by gcc compiler, which can be executed using ./a.out
+
+
+2. gcc source.c -o opt >>
+
+This will compile the source.c file but instead of giving default name hence executed using ./opt, 
+it will give output file as opt. -o is for output file option.
+
+
+3. gcc source.c -Werror -o opt >>
+
+This will compile the source and show the warning if any error is there in the program, -W is for 
+giving warnings.
+
+
+4. gcc source.c -Wall -o opt >>
+
+This will check not only for errors but also for all kinds warning like unused variables errors, it
+is good practice to use this flag while compiling the code.
+
+
+5. gcc -ggdb3 source.c -Wall -o opt >>
+
+This command give us permissions to debug the program using gdb which will be described later, -g
+option is for debugging.
+
+
+6. gcc -Wall source.c -o opt -lm >>
+
+This command link math.h library to our source file, -l option is used for linking particular 
+library, for math.h we use -lm.
+
+
+7. gcc -Wall -std=c11 source.c -o opt >>
+
+This command will use the c11 version of standards for compiling the source.c program, which 
+allows to define variable under loop initializations also using newer standards version is preferred.
+
+
+8. gcc -o source.c >>
+
+This command compile the program and give the object file as output, which is used to make libraries.
+
+
+9. gcc -v source.c -o source >>
+
+This option is used for the verbose purpose.
