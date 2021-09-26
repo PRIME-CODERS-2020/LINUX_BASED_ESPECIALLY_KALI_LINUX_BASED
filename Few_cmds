@@ -95,7 +95,7 @@ Few File Folder Commands:
 	mkdir [name of the folder]
 		To create a new folder with the name specified
 	
-	touch [name of the file]
+	touch [name of the file] 
 		To create a file with type and name of the file
 		
 	nano [file_name]
